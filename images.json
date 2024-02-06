@@ -1,0 +1,554 @@
+[
+  {
+    "name": "Anubis",
+    "path": "downloaded_images/Anubis.png"
+  },
+  {
+    "name": "Arsox",
+    "path": "downloaded_images/Arsox.png"
+  },
+  {
+    "name": "Astegon",
+    "path": "downloaded_images/Astegon.png"
+  },
+  {
+    "name": "Azurobe",
+    "path": "downloaded_images/Azurobe.png"
+  },
+  {
+    "name": "Beakon",
+    "path": "downloaded_images/Beakon.png"
+  },
+  {
+    "name": "Beegarde",
+    "path": "downloaded_images/Beegarde.png"
+  },
+  {
+    "name": "Blazamut",
+    "path": "downloaded_images/Blazamut.png"
+  },
+  {
+    "name": "Blazehowl Noct",
+    "path": "downloaded_images/Blazehowl Noct.png"
+  },
+  {
+    "name": "Blazehowl",
+    "path": "downloaded_images/Blazehowl.png"
+  },
+  {
+    "name": "Bristla",
+    "path": "downloaded_images/Bristla.png"
+  },
+  {
+    "name": "Broncherry Aqua",
+    "path": "downloaded_images/Broncherry Aqua.png"
+  },
+  {
+    "name": "Broncherry",
+    "path": "downloaded_images/Broncherry.png"
+  },
+  {
+    "name": "Bushi",
+    "path": "downloaded_images/Bushi.png"
+  },
+  {
+    "name": "Caprity",
+    "path": "downloaded_images/Caprity.png"
+  },
+  {
+    "name": "Cattiva",
+    "path": "downloaded_images/Cattiva.png"
+  },
+  {
+    "name": "Cawgnito",
+    "path": "downloaded_images/Cawgnito.png"
+  },
+  {
+    "name": "Celaray",
+    "path": "downloaded_images/Celaray.png"
+  },
+  {
+    "name": "Chikipi",
+    "path": "downloaded_images/Chikipi.png"
+  },
+  {
+    "name": "Chillet",
+    "path": "downloaded_images/Chillet.png"
+  },
+  {
+    "name": "Cinnamoth",
+    "path": "downloaded_images/Cinnamoth.png"
+  },
+  {
+    "name": "Cremis",
+    "path": "downloaded_images/Cremis.png"
+  },
+  {
+    "name": "Cryolinx",
+    "path": "downloaded_images/Cryolinx.png"
+  },
+  {
+    "name": "Daedream",
+    "path": "downloaded_images/Daedream.png"
+  },
+  {
+    "name": "Dazzi",
+    "path": "downloaded_images/Dazzi.png"
+  },
+  {
+    "name": "Depresso",
+    "path": "downloaded_images/Depresso.png"
+  },
+  {
+    "name": "Digtoise",
+    "path": "downloaded_images/Digtoise.png"
+  },
+  {
+    "name": "Dinossom Lux",
+    "path": "downloaded_images/Dinossom Lux.png"
+  },
+  {
+    "name": "Dinossom",
+    "path": "downloaded_images/Dinossom.png"
+  },
+  {
+    "name": "Direhowl",
+    "path": "downloaded_images/Direhowl.png"
+  },
+  {
+    "name": "Dumud",
+    "path": "downloaded_images/Dumud.png"
+  },
+  {
+    "name": "Eikthyrdeer Terra",
+    "path": "downloaded_images/Eikthyrdeer Terra.png"
+  },
+  {
+    "name": "Eikthyrdeer",
+    "path": "downloaded_images/Eikthyrdeer.png"
+  },
+  {
+    "name": "Elizabee",
+    "path": "downloaded_images/Elizabee.png"
+  },
+  {
+    "name": "Elphidran Aqua",
+    "path": "downloaded_images/Elphidran Aqua.png"
+  },
+  {
+    "name": "Elphidran",
+    "path": "downloaded_images/Elphidran.png"
+  },
+  {
+    "name": "Faleris",
+    "path": "downloaded_images/Faleris.png"
+  },
+  {
+    "name": "Felbat",
+    "path": "downloaded_images/Felbat.png"
+  },
+  {
+    "name": "Fenglope",
+    "path": "downloaded_images/Fenglope.png"
+  },
+  {
+    "name": "Flambelle",
+    "path": "downloaded_images/Flambelle.png"
+  },
+  {
+    "name": "Flopie",
+    "path": "downloaded_images/Flopie.png"
+  },
+  {
+    "name": "Foxcicle",
+    "path": "downloaded_images/Foxcicle.png"
+  },
+  {
+    "name": "Foxparks",
+    "path": "downloaded_images/Foxparks.png"
+  },
+  {
+    "name": "Frostallion Noct",
+    "path": "downloaded_images/Frostallion Noct.png"
+  },
+  {
+    "name": "Frostallion",
+    "path": "downloaded_images/Frostallion.png"
+  },
+  {
+    "name": "Fuack",
+    "path": "downloaded_images/Fuack.png"
+  },
+  {
+    "name": "Fuddler",
+    "path": "downloaded_images/Fuddler.png"
+  },
+  {
+    "name": "Galeclaw",
+    "path": "downloaded_images/Galeclaw.png"
+  },
+  {
+    "name": "Gobfin Ignis",
+    "path": "downloaded_images/Gobfin Ignis.png"
+  },
+  {
+    "name": "Gobfin",
+    "path": "downloaded_images/Gobfin.png"
+  },
+  {
+    "name": "Gorirat",
+    "path": "downloaded_images/Gorirat.png"
+  },
+  {
+    "name": "Grintale",
+    "path": "downloaded_images/Grintale.png"
+  },
+  {
+    "name": "Grizzbolt",
+    "path": "downloaded_images/Grizzbolt.png"
+  },
+  {
+    "name": "Gumoss (Flower)",
+    "path": "downloaded_images/Gumoss (Flower).png"
+  },
+  {
+    "name": "Gumoss",
+    "path": "downloaded_images/Gumoss.png"
+  },
+  {
+    "name": "Hangyu Cryst",
+    "path": "downloaded_images/Hangyu Cryst.png"
+  },
+  {
+    "name": "Hangyu",
+    "path": "downloaded_images/Hangyu.png"
+  },
+  {
+    "name": "Helzephyr",
+    "path": "downloaded_images/Helzephyr.png"
+  },
+  {
+    "name": "Hoocrates",
+    "path": "downloaded_images/Hoocrates.png"
+  },
+  {
+    "name": "Incineram Noct",
+    "path": "downloaded_images/Incineram Noct.png"
+  },
+  {
+    "name": "Incineram",
+    "path": "downloaded_images/Incineram.png"
+  },
+  {
+    "name": "Jetragon",
+    "path": "downloaded_images/Jetragon.png"
+  },
+  {
+    "name": "Jolthog Cryst",
+    "path": "downloaded_images/Jolthog Cryst.png"
+  },
+  {
+    "name": "Jolthog",
+    "path": "downloaded_images/Jolthog.png"
+  },
+  {
+    "name": "Jormuntide Ignis",
+    "path": "downloaded_images/Jormuntide Ignis.png"
+  },
+  {
+    "name": "Jormuntide",
+    "path": "downloaded_images/Jormuntide.png"
+  },
+  {
+    "name": "Katress",
+    "path": "downloaded_images/Katress.png"
+  },
+  {
+    "name": "Kelpsea Ignis",
+    "path": "downloaded_images/Kelpsea Ignis.png"
+  },
+  {
+    "name": "Kelpsea",
+    "path": "downloaded_images/Kelpsea.png"
+  },
+  {
+    "name": "Killamari",
+    "path": "downloaded_images/Killamari.png"
+  },
+  {
+    "name": "Kingpaca Cryst",
+    "path": "downloaded_images/Kingpaca Cryst.png"
+  },
+  {
+    "name": "Kingpaca",
+    "path": "downloaded_images/Kingpaca.png"
+  },
+  {
+    "name": "Kitsun",
+    "path": "downloaded_images/Kitsun.png"
+  },
+  {
+    "name": "Lamball",
+    "path": "downloaded_images/Lamball.png"
+  },
+  {
+    "name": "Leezpunk Ignis",
+    "path": "downloaded_images/Leezpunk Ignis.png"
+  },
+  {
+    "name": "Leezpunk",
+    "path": "downloaded_images/Leezpunk.png"
+  },
+  {
+    "name": "Lifmunk",
+    "path": "downloaded_images/Lifmunk.png"
+  },
+  {
+    "name": "Loupmoon",
+    "path": "downloaded_images/Loupmoon.png"
+  },
+  {
+    "name": "Lovander",
+    "path": "downloaded_images/Lovander.png"
+  },
+  {
+    "name": "Lunaris",
+    "path": "downloaded_images/Lunaris.png"
+  },
+  {
+    "name": "Lyleen Noct",
+    "path": "downloaded_images/Lyleen Noct.png"
+  },
+  {
+    "name": "Lyleen",
+    "path": "downloaded_images/Lyleen.png"
+  },
+  {
+    "name": "Mammorest Cryst",
+    "path": "downloaded_images/Mammorest Cryst.png"
+  },
+  {
+    "name": "Mammorest",
+    "path": "downloaded_images/Mammorest.png"
+  },
+  {
+    "name": "Maraith",
+    "path": "downloaded_images/Maraith.png"
+  },
+  {
+    "name": "Mau Cryst",
+    "path": "downloaded_images/Mau Cryst.png"
+  },
+  {
+    "name": "Mau",
+    "path": "downloaded_images/Mau.png"
+  },
+  {
+    "name": "Melpaca",
+    "path": "downloaded_images/Melpaca.png"
+  },
+  {
+    "name": "Menasting",
+    "path": "downloaded_images/Menasting.png"
+  },
+  {
+    "name": "Mossanda Lux",
+    "path": "downloaded_images/Mossanda Lux.png"
+  },
+  {
+    "name": "Mossanda",
+    "path": "downloaded_images/Mossanda.png"
+  },
+  {
+    "name": "Mozzarina",
+    "path": "downloaded_images/Mozzarina.png"
+  },
+  {
+    "name": "Necromus",
+    "path": "downloaded_images/Necromus.png"
+  },
+  {
+    "name": "Nitewing",
+    "path": "downloaded_images/Nitewing.png"
+  },
+  {
+    "name": "Nox",
+    "path": "downloaded_images/Nox.png"
+  },
+  {
+    "name": "Orserk",
+    "path": "downloaded_images/Orserk.png"
+  },
+  {
+    "name": "Paladius",
+    "path": "downloaded_images/Paladius.png"
+  },
+  {
+    "name": "Pengullet",
+    "path": "downloaded_images/Pengullet.png"
+  },
+  {
+    "name": "Penking",
+    "path": "downloaded_images/Penking.png"
+  },
+  {
+    "name": "Petallia",
+    "path": "downloaded_images/Petallia.png"
+  },
+  {
+    "name": "Pyrin Noct",
+    "path": "downloaded_images/Pyrin Noct.png"
+  },
+  {
+    "name": "Pyrin",
+    "path": "downloaded_images/Pyrin.png"
+  },
+  {
+    "name": "Quivern",
+    "path": "downloaded_images/Quivern.png"
+  },
+  {
+    "name": "Ragnahawk",
+    "path": "downloaded_images/Ragnahawk.png"
+  },
+  {
+    "name": "Rayhound",
+    "path": "downloaded_images/Rayhound.png"
+  },
+  {
+    "name": "Reindrix",
+    "path": "downloaded_images/Reindrix.png"
+  },
+  {
+    "name": "Relaxaurus Lux",
+    "path": "downloaded_images/Relaxaurus Lux.png"
+  },
+  {
+    "name": "Relaxaurus",
+    "path": "downloaded_images/Relaxaurus.png"
+  },
+  {
+    "name": "Reptyro Cryst",
+    "path": "downloaded_images/Reptyro Cryst.png"
+  },
+  {
+    "name": "Reptyro",
+    "path": "downloaded_images/Reptyro.png"
+  },
+  {
+    "name": "Ribbuny",
+    "path": "downloaded_images/Ribbuny.png"
+  },
+  {
+    "name": "Robinquill Terra",
+    "path": "downloaded_images/Robinquill Terra.png"
+  },
+  {
+    "name": "Robinquill",
+    "path": "downloaded_images/Robinquill.png"
+  },
+  {
+    "name": "Rooby",
+    "path": "downloaded_images/Rooby.png"
+  },
+  {
+    "name": "Rushoar",
+    "path": "downloaded_images/Rushoar.png"
+  },
+  {
+    "name": "Shadowbeak",
+    "path": "downloaded_images/Shadowbeak.png"
+  },
+  {
+    "name": "Sibelyx",
+    "path": "downloaded_images/Sibelyx.png"
+  },
+  {
+    "name": "Sparkit",
+    "path": "downloaded_images/Sparkit.png"
+  },
+  {
+    "name": "Surfent Terra",
+    "path": "downloaded_images/Surfent Terra.png"
+  },
+  {
+    "name": "Surfent",
+    "path": "downloaded_images/Surfent.png"
+  },
+  {
+    "name": "Suzaku Aqua",
+    "path": "downloaded_images/Suzaku Aqua.png"
+  },
+  {
+    "name": "Suzaku",
+    "path": "downloaded_images/Suzaku.png"
+  },
+  {
+    "name": "Swee",
+    "path": "downloaded_images/Swee.png"
+  },
+  {
+    "name": "Sweepa",
+    "path": "downloaded_images/Sweepa.png"
+  },
+  {
+    "name": "Tanzee",
+    "path": "downloaded_images/Tanzee.png"
+  },
+  {
+    "name": "Teafant",
+    "path": "downloaded_images/Teafant.png"
+  },
+  {
+    "name": "Tocotoco",
+    "path": "downloaded_images/Tocotoco.png"
+  },
+  {
+    "name": "Tombat",
+    "path": "downloaded_images/Tombat.png"
+  },
+  {
+    "name": "Univolt",
+    "path": "downloaded_images/Univolt.png"
+  },
+  {
+    "name": "Vaelet",
+    "path": "downloaded_images/Vaelet.png"
+  },
+  {
+    "name": "Vanwyrm Cryst",
+    "path": "downloaded_images/Vanwyrm Cryst.png"
+  },
+  {
+    "name": "Vanwyrm",
+    "path": "downloaded_images/Vanwyrm.png"
+  },
+  {
+    "name": "Verdash",
+    "path": "downloaded_images/Verdash.png"
+  },
+  {
+    "name": "Vixy",
+    "path": "downloaded_images/Vixy.png"
+  },
+  {
+    "name": "Warsect",
+    "path": "downloaded_images/Warsect.png"
+  },
+  {
+    "name": "Wixen",
+    "path": "downloaded_images/Wixen.png"
+  },
+  {
+    "name": "Woolipop",
+    "path": "downloaded_images/Woolipop.png"
+  },
+  {
+    "name": "Wumpo Botan",
+    "path": "downloaded_images/Wumpo Botan.png"
+  },
+  {
+    "name": "Wumpo",
+    "path": "downloaded_images/Wumpo.png"
+  }
+]

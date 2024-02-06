@@ -1,0 +1,234 @@
+[
+  {
+    "name": "Artisan",
+    "description": "Work speed +50%"
+  },
+  {
+    "name": "Burly Body",
+    "description": "Defense +20%"
+  },
+  {
+    "name": "Diet Lover",
+    "description": "Decrease in hunger is less likely by 15%"
+  },
+  {
+    "name": "Divine Dragon",
+    "description": "20% increase in dragon skill"
+  },
+  {
+    "name": "Ferocious",
+    "description": "Attack +20%"
+  },
+  {
+    "name": "Legend",
+    "description": "Attack +20%, defense +20%, movement speed +15%"
+  },
+  {
+    "name": "Logging Foreman",
+    "description": "25% increase to player logging efficiency"
+  },
+  {
+    "name": "Lord of Lightning",
+    "description": "20% increase to lightning attack damage"
+  },
+  {
+    "name": "Lucky",
+    "description": "Work speed +15%, attack +15%"
+  },
+  {
+    "name": "Mine Foreman",
+    "description": "25% increase to player mining efficiency"
+  },
+  {
+    "name": "Motivational Leader",
+    "description": "25% increase to player speed"
+  },
+  {
+    "name": "Rare",
+    "description": "Work speed +15%, attack +15%"
+  },
+  {
+    "name": "Stronghold Strategist",
+    "description": "10% increase to player defense"
+  },
+  {
+    "name": "Swift",
+    "description": "30% increase to movement speed"
+  },
+  {
+    "name": "Vanguard",
+    "description": "10% increase to player attack"
+  },
+  {
+    "name": "Workaholic",
+    "description": "Sanity drops 15% slower"
+  },
+  {
+    "name": "Musclehead",
+    "description": "Attack +30%, work speed -50%"
+  },
+  {
+    "name": "Runner",
+    "description": "20% increase to movement speed"
+  },
+  {
+    "name": "Serious",
+    "description": "Work speed +20%"
+  },
+  {
+    "name": "Abnormal",
+    "description": "10% decreased to incoming neutral damage"
+  },
+  {
+    "name": "Aggressive",
+    "description": "Attack +10%, ddefense -10%"
+  },
+  {
+    "name": "Blood of the Dragon",
+    "description": "10% increase to dragon attack damage"
+  },
+  {
+    "name": "Botanical Barrier",
+    "description": "10% decrease to incoming grass damage"
+  },
+  {
+    "name": "Brave",
+    "description": "Attack +10%"
+  },
+  {
+    "name": "Capacitor",
+    "description": "10% increase to lightning attack damage"
+  },
+  {
+    "name": "Cheery",
+    "description": "10% decrease to incoming dark damage"
+  },
+  {
+    "name": "Coldblooded",
+    "description": "10% increase to ice attack damage"
+  },
+  {
+    "name": "Conceited",
+    "description": "Work Speed +10%, defense -10%"
+  },
+  {
+    "name": "Dainty Eater",
+    "description": "10% decrease to satiety depletion"
+  },
+  {
+    "name": "Dragonkiller",
+    "description": "10% decrease to incoming dragon damage"
+  },
+  {
+    "name": "Earthquake Resistant",
+    "description": "10% decrease to incoming ground damage"
+  },
+  {
+    "name": "Fragrant Foliage",
+    "description": "10% increase to grass attack damage"
+  },
+  {
+    "name": "Hard Skin",
+    "description": "Defense +10%"
+  },
+  {
+    "name": "Heated Body",
+    "description": "10% decrease to incoming ice damage"
+  },
+  {
+    "name": "Hooligan",
+    "description": "Attack +15%, work speed -10%"
+  },
+  {
+    "name": "Hydromaniac",
+    "description": "10% increase to water attack damage"
+  },
+  {
+    "name": "Insulated Body",
+    "description": "10% decrease to incoming lightning damage"
+  },
+  {
+    "name": "Masochist",
+    "description": "Defense +15%, attack -15%"
+  },
+  {
+    "name": "Nimble",
+    "description": "10% increase to movement speed"
+  },
+  {
+    "name": "Positive Thinker",
+    "description": "Sanity drops 10% slower"
+  },
+  {
+    "name": "Power of Gaia",
+    "description": "10% increase to earth attack damage"
+  },
+  {
+    "name": "Pyromaniac",
+    "description": "10% increase to fire attack damage"
+  },
+  {
+    "name": "Sadist",
+    "description": "Attack +15%, defense -15%"
+  },
+  {
+    "name": "Suntan Lover",
+    "description": "10% decrease to incoming fire damage"
+  },
+  {
+    "name": "Veil of Darkness",
+    "description": "10% increase to dark attack damage"
+  },
+  {
+    "name": "Waterproof",
+    "description": "10% decrease to incoming water damage"
+  },
+  {
+    "name": "Work Slave",
+    "description": "Work Speed +30%, Attack -30%"
+  },
+  {
+    "name": "Zen Mind",
+    "description": "10% increase to neutral attack damage"
+  },
+  {
+    "name": "Clumsy",
+    "description": "Work speed -10%"
+  },
+  {
+    "name": "Coward",
+    "description": "Attack -10%"
+  },
+  {
+    "name": "Downtrodden",
+    "description": "Defense -10%"
+  },
+  {
+    "name": "Glutton",
+    "description": "Satiety drops 10% faster"
+  },
+  {
+    "name": "Unstable",
+    "description": "Sanity drops 10% faster"
+  },
+  {
+    "name": "Bottomless Stomach",
+    "description": "Satiety drops 15% faster"
+  },
+  {
+    "name": "Destructive",
+    "description": "Saniety drops 15% faster"
+  },
+  {
+    "name": "Brittle",
+    "description": "Defense -20%"
+  },
+  {
+    "name": "Pacifist",
+    "description": "Attack -20%"
+  },
+  {
+    "name": "Slacker",
+    "description": "Work speed -30%"
+  }
+]

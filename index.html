@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeder Buddy</title>
+    <style>
+    body { 
+        font-family: 'Roboto', 'Arial', sans-serif; 
+        margin: 20px; 
+        background: #f5f5f5; 
+        color: #333; 
+    }
+    .action-bar, .filter-bar { 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 10px; 
+        margin-bottom: 20px; 
+        background: white; 
+        padding: 10px; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    }
+    .grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px; 
+    }
+    .monster { 
+        background: white; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        border-radius: 8px; 
+        padding: 20px; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 10px; 
+    }
+    .monster h3 { 
+        font-size: 1.2rem; 
+        margin: 0; 
+        color: #1a73e8; 
+    }
+    .monster p { 
+        font-size: 0.9rem; 
+        color: #1a73e8;
+        margin: 2px 0; 
+    }
+    select, button { 
+        padding: 8px 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        background: white; 
+        cursor: pointer; 
+    }
+    button { 
+        background: #1a73e8; 
+        color: white; 
+        border: none; 
+        width: 100%;
+    }
+    button:hover { 
+        background: #2b85f0; 
+    }
+    .monster-top-row { 
+        display: flex; 
+        align-items: center; 
+        gap: 10px;
+    }
+    .monster-icon { 
+        width: 80px; 
+        height: 80px; 
+        object-fit: cover; 
+        border-radius: 50%;
+    }
+    .gender-icon { 
+        width: 32px; 
+        height: 32px; 
+        border-radius: 0; 
+    }
+    .monster-info { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 1px; 
+    }
+    hr {
+        border: none; 
+        height: 1px; 
+        background-color: #1a73e8; 
+        margin: 10px 0;
+
+    }
+    .passive {
+      border: 1px solid #1a73e8; 
+      border-radius: 4px; 
+      padding: 4px 8px; 
+      display: inline-block; 
+      margin: 2px;
+      background-color: #e8f0fe;
+    }
+    #customTooltip {
+        position: absolute;
+        background-color: white;
+        color: #333;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 8px 12px;
+        display: none;
+        z-index: 1000;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+        max-width: 300px;
+        pointer-events: none; 
+    }
+    .dim {
+        color: #999; 
+    }
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1001; 
+    }
+    .popup {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        max-width: 600px;
+        width: 90%;
+        z-index: 1002;
+    }
+    .popup h2 {
+        margin-top: 0;
+    }
+
+    .popup button {
+        margin-top: 20px;
+    }
+
+    li{
+        margin-bottom:10px;
+    }
+</style>
+    </head>
+    <body>
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="popup">
+            <h2>Welcome to Your Adventure!</h2>
+            <p>Just a few steps and you'll be on your way:</p>
+            <ol>
+                <li>Open your palbox and organize it so there are no empty spaces <span class="dim">(Just a heads-up: our scanner commits to scanning the entire page before recognizing it's hit a gap. So, if you notice it breezing past empty spaces, don't fret! It's just that it won't know it's time to stop until it's done with the page it's currently on. This setup is perfect for scanning specific sections if you arrange a little space at the end of a page where you'd like the scanning to halt.)</span></li>
+                <li>Launch the app above the game and press the scan button <span class="dim">(You have a quick 5 seconds to switch back to the game window, essential for the scanner to do its magic with page switching.)</span></li>
+                <li>Hang tight and avoid using the mouse during the scan <span class="dim">(We'll be commandeering your mouse to explore your palbox for those elusive passive traits.)</span></li>
+                <li>Once the scanning concludes, the app window come back into focus <span class="dim">(Just remember, keep your hands off the mouse until this enchanting moment occurs.)</span></li>
+            </ol>
+            <button id="continueButton">Continue</button>
+        </div>
+    </div>
+
+    <div class="action-bar">
+        <button id="scanButton">Scan</button>
+    </div>
+    <div class="filter-bar">
+        <select id="genderFilter">
+            <option value="">Select Gender</option>
+            <option value="Boy">Boy</option>
+            <option value="Girl">Girl</option>
+        </select>
+        <select id="filter1"><option value="">Select Passive</option></select>
+        <select id="filter2"><option value="">Select Passive</option></select>
+        <select id="filter3"><option value="">Select Passive</option></select>
+        <select id="filter4"><option value="">Select Passive</option></select>
+    </div>
+
+    <div class="grid" id="monsGrid"></div>
+
+    <script>
+        const monsGrid = document.getElementById('monsGrid');
+        const filters = Array.from(document.querySelectorAll('.filter-bar select')).filter(select => select.id !== 'genderFilter');
+        let MonsArray = [];
+        let uniquePassives = new Set();
+        let iconPaths = {};
+        let passivesDescriptions = {};
+
+        loadAndDisplayMons();
+
+        async function loadPassivesDescriptions() {
+            const response = await fetch('passives.json');
+            const passives = await response.json();
+            passives.forEach(passive => {
+                passivesDescriptions[passive.name] = passive.description;
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const scanButton = document.getElementById('scanButton');
+            const continueButton = document.getElementById('continueButton');
+            const popupOverlay = document.getElementById('popupOverlay');
+
+            scanButton.disabled = true;
+
+            continueButton.addEventListener('click', function() {
+                popupOverlay.style.display = 'none';
+                scanButton.disabled = false;
+            });
+        });
+
+        async function loadAndDisplayMons() {
+            await loadPassivesDescriptions();
+            const iconsResponse = await fetch('images.json');
+            const iconsArray = await iconsResponse.json();
+            iconsArray.forEach(icon => {
+                iconPaths[icon.name] = icon.path;
+            });
+        }
+
+        function initializeFilters(mons) {
+            MonsArray = mons;           
+            populateFilters(MonsArray);
+        }
+
+        function cleanEmptyPassives(monsArray) {
+            monsArray.forEach(mon => {
+                mon.passives = mon.passives.filter(passive => passive.trim() !== '');
+            });
+        }
+
+        function displayMons(monsArray) {
+            cleanEmptyPassives(monsArray);
+            monsGrid.innerHTML = '';
+
+            let tooltip = document.getElementById('customTooltip');
+            if (!tooltip) {
+                tooltip = document.createElement('div');
+                tooltip.id = 'customTooltip';
+                document.body.appendChild(tooltip);
+            }
+
+            monsArray.forEach(mon => {
+                console.log(mon);
+                const monElement = document.createElement('div');
+                monElement.className = 'monster';
+
+                const iconPath = iconPaths[mon.name] || 'defaultIconPath.png';
+                const genderIconPath = mon.gender === 'Boy' ? 'Male-icon.png' : mon.gender === 'Girl' ? 'Female-icon.png' : 'defaultGenderIconPath.png';
+
+                let passivesHTML = mon.passives.map(passive => {
+                    const description = passivesDescriptions[passive] || 'No description available';
+                    return `<p class="passive" data-description="${description}">${passive}</p>`;
+                }).join('');
+
+                monElement.innerHTML = `
+                    <div class="monster-top-row">
+                        <img src="${iconPath}" alt="${mon.name}" class="monster-icon">
+                        <h3>${mon.name}</h3>
+                        <img src="${genderIconPath}" alt="${mon.gender}" class="gender-icon">
+                    </div>
+                    <hr>
+                    <div class="monster-info">${passivesHTML}</div>`;
+
+                monsGrid.appendChild(monElement);
+
+                monElement.querySelectorAll('.passive').forEach(element => {
+                    element.addEventListener('mouseover', (e) => showTooltip(e, tooltip));
+                    element.addEventListener('mousemove', (e) => positionTooltip(e, tooltip));
+                    element.addEventListener('mouseout', () => hideTooltip(tooltip));
+                });
+            });
+        }
+
+        function showTooltip(e, tooltip) {
+            tooltip.innerHTML = e.target.getAttribute('data-description');
+            tooltip.style.display = 'block';
+        }
+
+        function positionTooltip(e, tooltip) {
+            tooltip.style.left = `${e.pageX + 10}px`;
+            tooltip.style.top = `${e.pageY + 10}px`;
+        }
+
+        function hideTooltip(tooltip) {
+            tooltip.style.display = 'none';
+        }
+
+        function populateFilters(monsArray) {
+            uniquePassives.clear();
+
+            monsArray.forEach(mon => {
+                mon.passives.forEach(passive => uniquePassives.add(passive));
+            });
+
+            const sortedPassives = Array.from(uniquePassives).sort();
+            filters.forEach(filter => {
+                filter.innerHTML = '<option value="">Select Passive</option>';
+                sortedPassives.forEach(passive => {
+                    const option = new Option(passive, passive);
+                    filter.add(option);
+                });
+            });
+        }
+
+        filters.forEach(filter => filter.addEventListener('change', filterMons));
+
+        document.getElementById('genderFilter').addEventListener('change', filterMons);
+
+        function filterMons() {
+            const selectedGender = document.getElementById('genderFilter').value;
+            const selectedPassives = filters.map(filter => filter.value).filter(value => value);
+
+            const filteredMons = MonsArray.filter(mon => {
+                const genderMatch = !selectedGender || mon.gender === selectedGender;
+                const passiveMatch = selectedPassives.every(passive => mon.passives.includes(passive));
+                return genderMatch && passiveMatch;
+            });
+
+            displayMons(filteredMons);
+        }
+
+    </script>
+
+    <script src="renderer.js"></script> 
+</body>
+</html>

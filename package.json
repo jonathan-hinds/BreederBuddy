@@ -1,0 +1,53 @@
+{
+  "name": "newbreederbuddy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps && npx @electron/rebuild"
+  },
+  "buildDependenciesFromSource": true,
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.4.2",
+    "electron-builder": "^21.0.10",
+    "electron-rebuild": "^3.2.9",
+    "prebuild-install": "^7.1.1"
+  },
+  "dependencies": {
+    "jimp": "^0.22.10",
+    "p-limit": "^5.0.0",
+    "robotjs": "^0.6.0",
+    "screenshot-desktop": "^1.15.0",
+    "tesseract.js": "^5.0.4"
+  },
+  "build": {
+    "appId": "com.example.breederbuddy",
+    "productName": "Breeder Buddy",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "BreederBuddyIcon.png",
+      "asarUnpack": [
+        "node_modules/screenshot-desktop/lib/win32/screenCapture_1.3.2.bat",
+        "node_modules/screenshot-desktop/lib/win32/app.manifest"
+      ]
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  }
+}
